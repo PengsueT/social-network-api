@@ -1,10 +1,10 @@
-const { Schema, Type } = require('mongoose');
+const { Schema, Types } = require('mongoose');
 const dayjs = require('dayjs');
 
 const reactionSchema = new Schema({
     reactionId: {
         type: Schema.Types.ObjectId,
-        default: () => new types.ObjectId(), // Default value set to a new ObjectId
+        default: () => new Types.ObjectId(), // Default value set to a new ObjectId
     },
     reactionBody: {
         type: String,
